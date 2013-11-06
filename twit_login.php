@@ -1,6 +1,8 @@
 <?php
 require("twitteroauth.php");
-require 'inc/app_tokens_twitter.inc.php';
+
+define("APPLICATION_PATH", ".");
+require ( APPLICATION_PATH . "./../../includes/app_tokens_twitter.inc.php");
 session_start();
 
 $twitteroauth = new TwitterOAuth($consumer_key, $consumer_secret);

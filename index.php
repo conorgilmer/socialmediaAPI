@@ -2,17 +2,21 @@
 
 <div class="container">
 
-      <div class="jumbotron hero-spacer">
+      <!--div class="jumbotron hero-spacer">
         <h1>My Web presences!</h1>
         <p>A composite website showing my social media accounts!</p>
-        <p><a class="btn btn-primary btn-large">List accounts!</a></p>
       </div>
       
-      <hr>
+      <hr-->
       
       <div class="row">
         <div class="col-lg-12">
-           <h3>Latest Features</h3>
+           <h3>Login to My Internet Presence</h3>
+           <?php 
+           if (isset($_GET['loginfail']))
+            {echo $_GET['loginfail'];} 
+           
+           ?>
         </div>
       </div><!-- /.row -->
       
@@ -20,44 +24,46 @@
 
         <div class="col-lg-3 col-md-6 hero-feature">
           <div class="thumbnail">
-            <img src="http://placehold.it/800x500" alt="">
+            <!--img src="http://placehold.it/800x500" alt=""-->
             <div class="caption">
-              <h3>Feature Label</h3>
-              <p>This would be a great spot to feature some brand new products!</p>
-              <p><a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a></p>
+              <h3>Native Login</h3>
+              <p>Login Natively!</p>
+              <p><a href="native_login.php" class="btn btn-primary">Native Login</a></p>
+              
+               <p>u: guest p: letmein</p>
             </div>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 hero-feature">
           <div class="thumbnail">
-            <img src="http://placehold.it/800x500" alt="">
+            <!--img src="http://placehold.it/800x500" alt=""-->
             <div class="caption">
-              <h3>Feature Label</h3>
-              <p>This would be a great spot to feature some brand new products!</p>
-              <p><a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a></p>
+              <h3>Facebook Login</h3>
+              <p>Login with your Facebook Account</p>
+              <p><a href="facebook_login.php" class="btn btn-primary">Facebook Login</a></p>
             </div>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 hero-feature">
           <div class="thumbnail">
-            <img src="http://placehold.it/800x500" alt="">
+            <!--img src="http://placehold.it/800x500" alt=""-->
             <div class="caption">
-              <h3>Feature Label</h3>
-              <p>This would be a great spot to feature some brand new products!</p>
-              <p><a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a></p>
+              <h3>Google Login</h3>
+              <p>Google with your Google Account</p>
+              <p><a href="google_login.php" class="btn btn-primary">Google Login</a> </p>
             </div>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 hero-feature">
           <div class="thumbnail">
-            <img src="http://placehold.it/800x500" alt="">
+            <!--img src="http://placehold.it/800x500" alt=""-->
             <div class="caption">
-              <h3>Feature Label</h3>
-              <p>This would be a great spot to feature some brand new products!</p>
-              <p><a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a></p>
+              <h3>Twitter Login</h3>
+              <p>Login with your Twitter Account!</p>
+              <p><a href="twit_login.php" class="btn btn-primary">Twitter Login</a></p>
             </div>
           </div>
         </div>
