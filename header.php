@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>My Web Presence  - Conor Gilmer - Bootstrap 3</title>
+    <title>Cafe Libre and Social Media Presence</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">

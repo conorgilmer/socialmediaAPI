@@ -13,7 +13,7 @@ $request_token = $twitteroauth->getRequestToken('localhost/socialmediaAPI/privat
 
 $_SESSION['oauth_token'] = $request_token['oauth_token'];
 $_SESSION['oauth_token_secret'] = $request_token['oauth_token_secret'];
-//$sname = $request_token['screen_name'];
+$_SESSION['twitter_results'] = $request_token['screen_name'];
 
 // If everything goes well..
 if ($twitteroauth->http_code == 200) {

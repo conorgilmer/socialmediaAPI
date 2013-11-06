@@ -9,32 +9,80 @@
 
 <div class="container">
 
-      <div class="jumbotron hero-spacer">
+      <!--div class="jumbotron hero-spacer">
         <h1>Cafe Libre!</h1>
-      </div>
+      </div-->
       
       <div class="row">
         <div class="col-lg-12">
-           <h3>Menu</h3>
+           <h3>Cafe Libre</h3>
         </div>
       </div><!-- /.row -->
       
       <div class="row">
         <div class="col-lg-12">
            <h4>Social Media for Cafe Libre</h4>
-<p> 
+        </div>
+      </div><!-- /.row -->
+
+      <!-- social media buttons -->
+      <div class="row text-center">
+
+        <div class="col-lg-4 col-md-6 hero-feature">
+          <div class="thumbnail">
+            <div class="caption">
+              <h3>Twitter Buttons</h3>
 <a href="https://twitter.com/share" class="twitter-share-button" data-text="Checkout Cafe Libre" data-via="LibreCafe">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
+<br>
 <a href="https://twitter.com/LibreCafe" class="twitter-follow-button" data-show-count="false">Follow @LibreCafe</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
+<br>
 <a href="https://twitter.com/intent/tweet?button_hashtag=CafeLibreD2" class="twitter-hashtag-button" data-related="LibreCafe" data-url="http://www.appwayz.com/socialmediaAPI/cafelibre.php">Tweet #CafeLibreD2</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-</p>
+            </div>
+          </div>
         </div>
-      </div><!-- /.row -->
+
+        <div class="col-lg-4 col-md-6 hero-feature">
+          <div class="thumbnail">
+            <div class="caption">
+              <h3>Facebook Buttons</h3>
+              
+<div class="fb-follow" data-href="http://www.facebook.com/cafelibred2" data-colorscheme="light" data-layout="standard" data-show-faces="true"></div>
+
+<div class="fb-like" data-href="http://www.appwayz.com/socialmediaAPI/cafelibre.php" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+<!--div class="fb-like" data-href="http://www.appwayz.com/socialmediaAPI/cafelibre.php" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div-->
+
+<div class="fb-share-button" data-href="http://www.appwayz.com/socialmediaAPI/cafelibre.php" data-type="button_count"></div>
+
+<div class="fb-send" data-href="http://www.appwayz.com/socialmediaAPI/cafelibre.php" data-colorscheme="light"></div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 hero-feature">
+          <div class="thumbnail">
+            <div class="caption">
+              <h3>Google</h3>
+              <p></p>
+             </div>
+          </div>
+        </div>
+
+        <!--div class="col-lg-3 col-md-6 hero-feature">
+          <div class="thumbnail">
+            <div class="caption">
+              <h3>Blank</h3>
+            </div>
+          </div>
+        </div-->
+
+      </div>
+      <!-- social media buttons end -->
+
       <div class="row text-center">
 
         <div class="col-lg-3 col-md-6 hero-feature">
