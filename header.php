@@ -26,17 +26,35 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Home</a>
+          <a class="navbar-brand" href="index.php">Home</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
             <li><a href="about.php">About</a></li>
-            <li><a href="facebook.php">Facebook</a></li>
-            <li><a href="google.php">Google +</a></li>
-            <li><a href="twitter.php">Twitter</a></li>
-            <li><a href="instagram.php">Instagram</a></li>
+            
+            <li><a href="cafelibre.php">Cafe Libre</a></li>
+          
+    <?php
+           
+session_start();
+
+if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == 1)
+{ //$typelogin = $_SESSION['loggedInAs'];
+  //log("in isset in header");
+          echo ("<li><a href=\"facebook.php\">Facebook</a></li>
+            <li><a href=\"google.php\">Google +</a></li>
+            <li><a href=\"twitter.php\">Twitter</a></li>
+            <li><a href=\"youtube.php\">YouTube</a></li>
+            
+<li><a href=\"logout.php\">Logout</a></li>");
+//<li><a href=\"#\">You're logged in using". $typelogin."</a></li>");
+} else {
+            
+echo ("<li><a href=\"index.php\">Login</a></li>");
+}
+         ?>   
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
