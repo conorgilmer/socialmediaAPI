@@ -69,6 +69,8 @@ if($_SESSION['state'] && ($_SESSION['state'] === $_REQUEST['state']))
 
 //version 2
     $_SESSION["loggedIn"]=1;
+    $_SESSION["route"] = "Facebook";
+    $_SESSION["youare"] =$user->name;
     header("Location: private.php?youare=$user->name");
     //header("Location: privateHome.php");
 }

@@ -38,10 +38,7 @@
             <li><a href="about.php">About</a></li>
             
           
-    <?php
-           
-session_start();
-
+<?php
 if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == 1)
 { //$typelogin = $_SESSION['loggedInAs'];
   //log("in isset in header");
@@ -50,22 +47,25 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == 1)
             <li><a href=\"google.php\">Google +</a></li>
             <li><a href=\"twitter.php\">Twitter</a></li>
             <li><a href=\"youtube.php\">YouTube</a></li>
-            
+
 <li><a href=\"logout.php\">Logout</a></li>");
 //<li><a href=\"#\">You're logged in using". $typelogin."</a></li>");
 } else {
-            
+
 echo ("<li><a href=\"index.php\">Login</a></li>");
 }
-         
-            
-            
-            
-       
-   ?>
-          </ul>
-        </div><!-- /.navbar-collapse -->
+?>
+
+       </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
     </nav>
-    
+    <?php
+           
+session_start();
+
+if ($_SESSION['loggedIn'] == 0)
+{
+	header("Location: private.php");            
+}
+   ?>
     

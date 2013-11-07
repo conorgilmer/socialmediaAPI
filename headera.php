@@ -37,9 +37,9 @@
           <ul class="nav navbar-nav">
             <li><a href="about.php">About</a></li>
             
-            <li><a href="cafelibre.php">Cafe Libre</a></li>
+            <!--li><a href="cafelibre.php">Cafe Libre</a></li-->
           
-<li><a href=\"index.php\">Login</a></li>
+<li><a href="index.php">Login</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->

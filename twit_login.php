@@ -20,6 +20,7 @@ $_SESSION["route"] = "Twitter";
 if ($twitteroauth->http_code == 200) {
     // Let's generate the URL and redirect
         $_SESSION["loggedIn"]=1;
+        $_SESSION["youare"]=$twitteroauth->screen_name;// "Twitter User";
     $url = $twitteroauth->getAuthorizeURL($request_token['oauth_token']);
     header('Location: ' . $url);
 } else {

@@ -33,16 +33,13 @@ if (!isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] != 1)
        <div class="row">
         <div class="col-lg-12">
            <h3>Private </h3>
-           <p> Welcome <?php echo $_SESSION["route"]; ?> </p>
+           <p> Welcome  <?php if ( isset($_SESSION['route']))
+        { echo $_SESSION["youare"]; } ?>  you logged in via <?php 
+           if ( isset($_SESSION['route']))
+        { echo $_SESSION["route"]; } ?> </p>
            
-           <?php if (isset($_SESSION['twitter_results'])) { ?>
-                            <p>Hi <?php echo ($_SESSION['twitter_results']->name) ?></p>
-                            <p>You are logged in with your Twitter account.</p>
-                            <a class="btn btn-sm btn-info btn-block" href="logout.php">Logout</a>
-                        <?php } else { ?>
-                            <a class="btn btn-lg btn-info btn-block" href="twit_login.php">Login with Twitter</a>
-                        <?php } ?>
            
+      
         </div>
       </div><!-- /.row -->
       
@@ -52,7 +49,7 @@ if (!isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] != 1)
         
       <div class="row">
         <div class="col-lg-12">
-           <h3>Google Maps</h3>
+           <h3>Social Media Stuff for</h3>
         </div>
       </div><!-- /.row -->
       
