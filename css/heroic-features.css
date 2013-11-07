@@ -12,3 +12,13 @@ body {
 footer {
 	margin: 50px 0;
 }
+
+
+ #map_canvas 
+ { 
+
+  height: 400px;
+  width: 400px;
+
+ }
+

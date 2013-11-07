@@ -14,6 +14,7 @@ $request_token = $twitteroauth->getRequestToken('localhost/socialmediaAPI/privat
 $_SESSION['oauth_token'] = $request_token['oauth_token'];
 $_SESSION['oauth_token_secret'] = $request_token['oauth_token_secret'];
 $_SESSION['twitter_results'] = $request_token['screen_name'];
+$_SESSION["route"] = "Twitter";
 
 // If everything goes well..
 if ($twitteroauth->http_code == 200) {
@@ -23,6 +24,6 @@ if ($twitteroauth->http_code == 200) {
     header('Location: ' . $url);
 } else {
     // It's a bad idea to kill the script, but we've got to know when there's an error.
-    die('Something wrong happened.');
+    die('Something wrong happened. Couldnt Connect to Twitter');
 }
 ?>

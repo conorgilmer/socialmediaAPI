@@ -33,7 +33,7 @@ if (!isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] != 1)
        <div class="row">
         <div class="col-lg-12">
            <h3>Private </h3>
-           <p> Welcome <?php echo $youare?> </p>
+           <p> Welcome <?php echo $_SESSION["route"]; ?> </p>
            
            <?php if (isset($_SESSION['twitter_results'])) { ?>
                             <p>Hi <?php echo ($_SESSION['twitter_results']->name) ?></p>

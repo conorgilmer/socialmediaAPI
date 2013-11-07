@@ -1,6 +1,6 @@
 <?php
 /* ****************************************
- * Author: Conor O'Reilly
+ * Author: Conor Gilmer
  * Date: 
  * ref: 
  *    https://developers.facebook.com/docs/howtos/login/server-side-login/
@@ -71,6 +71,7 @@ if($_SESSION['state'] && ($_SESSION['state'] === $_REQUEST['state']))
   
     ///$_SESSION["loginsource"] = "fb" https-http i think is an issue
     $_SESSION["loggedIn"]=1;
+    $_POST["route"]="Facebook";
     header("Location: private.php");
     //header("Location: privateHome.php");
 }

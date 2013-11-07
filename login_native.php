@@ -25,6 +25,7 @@ if (!empty($_POST))
     {
 	//	die (" $s_username oon the wayi $s_password");
         $_SESSION["loggedIn"]=1;
+        $_SESSION['route'] = "Natively";
      //   $_SESSION["loggedInAs"] = "Natively";
         header("Location: private.php?youare=$s_username&loginfail=loggedin");
     }

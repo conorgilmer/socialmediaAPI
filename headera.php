@@ -39,28 +39,18 @@
             
             <li><a href="cafelibre.php">Cafe Libre</a></li>
           
+<li><a href=\"index.php\">Login</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
     <?php
            
 session_start();
 
 if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == 1)
-{ //$typelogin = $_SESSION['loggedInAs'];
-  //log("in isset in header");
-          echo ("<li><a href=\"facebook.php\">Facebook</a></li>
-            <li><a href=\"google.php\">Google +</a></li>
-            <li><a href=\"twitter.php\">Twitter</a></li>
-            <li><a href=\"youtube.php\">YouTube</a></li>
-            
-<li><a href=\"logout.php\">Logout</a></li>");
-//<li><a href=\"#\">You're logged in using". $typelogin."</a></li>");
-} else {
-            
-echo ("<li><a href=\"index.php\">Login</a></li>");
+{
+	header("Location: private.php");            
 }
-         ?>   
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container -->
-    </nav>
-    
+   ?>
     
