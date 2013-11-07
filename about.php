@@ -17,50 +17,40 @@
       
       <div class="row text-center">
 
-        <div class="col-lg-3 col-md-6 hero-feature">
+        <div class="col-lg-4 col-md-6 hero-feature">
           <div class="thumbnail">
             <!--img src="http://placehold.it/800x500" alt=""-->
             <div class="caption">
-              <h3>Twitter</h3>
-              <p>Tweets and HashTags of Interest!</p>
-              <p><a href="twitter.php" class="btn btn-primary">Twitter</a></p>
+              <h3>Social Media</h3>
+              <p>Tweets and HashTags of Interest! Facebook Streem, Buttons, Google Badges</p>
+              <!--p><a href="index.php" class="btn btn-primary">Login</a> </p-->
             </div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 hero-feature">
+        <div class="col-lg-4 col-md-6 hero-feature">
           <div class="thumbnail">
             <!--img src="http://placehold.it/800x500" alt=""-->
             <div class="caption">
-              <h3>Facebook</h3>
+              <h3>Localhost Copy</h3>
               <p>Facebook Posts and Likes and stuff!</p>
-              <p><a href="facebook.php" class="btn btn-primary">Facebook</a></p>
+              <p><a href="http://127.0.0.1/socialmediaAPI/index.php" class="btn btn-primary">Localhost</a></p>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 hero-feature">
+        <div class="col-lg-4 col-md-6 hero-feature">
           <div class="thumbnail">
             <!--img src="http://placehold.it/800x500" alt=""-->
             <div class="caption">
-              <h3>Google +</h3>
-              <p>Google plus posts and follows</p>
-              <p><a href="google.php" class="btn btn-primary">Google +</a> </p>
+              <h3>Online Version</h3>
+              <p>Hosted on www.appwayz.com</p>
+              <p><a href="http://www.appwayz.com/socialmediaAPI/index.php" class="btn btn-primary">On Line Version</a> </p>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 hero-feature">
-          <div class="thumbnail">
-            <!--img src="http://placehold.it/800x500" alt=""-->
-            <div class="caption">
-              <h3>YouTube</h3>
-              <p>My YouTube Channel with my Videos!</p>
-              <p><a href="youtube.php" class="btn btn-primary">YouTube</a></p>
-            </div>
-          </div>
-        </div>
-
+        
 
       </div><!-- /.row -->
      <?php include('footer.php'); ?>

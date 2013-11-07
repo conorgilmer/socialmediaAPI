@@ -1,28 +1,45 @@
-<?php include('header.php'); ?>
+<?php
+session_start();
+define("APPLICATION_PATH", ".");
+require ( APPLICATION_PATH . "/includes/app_tokens_google.inc.php");
+//from quickstart
+require('google-api-php-client/src/Google_Client.php');
+require('google-api-php-client/src/contrib/Google_PlusService.php');
 
-<div class="container"> 
-      <div class="row">
-        <div class="col-lg-12">
-           <h3>Login to My Internet Presence</h3>
-        </div>
-      </div><!-- /.row -->
-      
-      <div class="row text-center">
-
-
-        <div class="col-lg-3 col-md-6 hero-feature">
-          <div class="thumbnail">
-            <!--img src="http://placehold.it/800x500" alt=""-->
-            <div class="caption">
-              <h3>Google Login</h3>
-              <p>Google with your Google Account, Under Construction</p>
-            </div>
-          </div>
-        </div>
-
-          </div>
-        </div>
+$client = new Google_Client();
+$client->setApplicationName('SocialMediaAPI');
+$client->setClientId($CLIENT_ID);
+$client->setClientSecret($CLIENT_SECRET);
+$client->setRedirectUri($REDIRECT_URL);
+$client->setDeveloperKey($DEVELOPER_KEY);
+$plus = new Google_PlusService($client);
 
 
-      </div><!-- /.row -->
-     <?php include('footer.php'); ?>
+$_SESSION['route'] = "Google Account";
+if (isset($_GET['code'])) {
+    $client->authenticate();
+    $_SESSION['token'] = $client->getAccessToken();
+    $redirect = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
+    header('Location: ' . filter_var($redirect, FILTER_SANITIZE_URL));
+}
+
+if (isset($_SESSION['google_token'])) {
+    $client->setAccessToken($_SESSION['google_token']);
+}
+
+if ($client->getAccessToken()) {
+//    $activities = $plus->activities->listActivities('me', 'public');
+//    print 'Your Activities: <pre>' . print_r($activities, true) . '</pre>';
+
+    // We're not done yet. Remember to update the cached access token.
+    // Remember to replace $_SESSION with a real database or memcached.
+    $_SESSION['google_token'] = $client->getAccessToken();
+   // $_SESSION['loggedIn']=1;
+    header('Location: ./index.php');
+} else {
+     $_SESSION['loggedIn']=1;
+     $_SESSION['youare']="google user";
+    $authUrl = $client->createAuthUrl();
+    header('Location:' . $authUrl);
+}
+?>

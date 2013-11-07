@@ -1,6 +1,6 @@
 <?php
 /* ****************************************
- * Author: Conor O'Reilly
+ * Author: Conor gilmer
  * Date: 
  * ref: 
  *    https://developers.facebook.com/docs/howtos/login/server-side-login/
@@ -16,7 +16,7 @@ define("LIBRARY_PATH", "lib");
 
 //Load the facebook access codes
 
-require (APPLICATION_PATH . "./../../includes/app_tokens_facebook.inc.php");
+require (APPLICATION_PATH . "/includes/app_tokens_facebook.inc.php");
 
 // This code is from the referenced facebook example
 
