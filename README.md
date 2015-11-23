@@ -7,8 +7,9 @@ social media api
 - facebook
 - youtube
 
+- flickr
+- instagram
+
 ## To Do
 sort out logins
-add instagram
-add flickr
 add CV/LinkedIN like
