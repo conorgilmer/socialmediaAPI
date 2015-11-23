@@ -51,6 +51,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == 1)
             <li><a href=\"twitter.php\">Twitter</a></li>
             <li><a href=\"youtube.php\">YouTube</a></li>
             <li><a href=\"flickr.php\">Flickr</a></li>
+            <li><a href=\"instagram.php\">Instagram</a></li>
             
 <li><a href=\"logout.php\">Logout</a></li>");
 //<li><a href=\"#\">You're logged in using". $typelogin."</a></li>");
