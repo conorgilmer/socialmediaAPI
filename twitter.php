@@ -4,7 +4,7 @@
 
       <div class="jumbotron hero-spacer">
         <h1>My Twitter presences!</h1>
-        <p>Stuff from my twittesque existence!</p>
+        <p>Stuff from my twitteresque existence!</p>
       </div>
       
       <hr>
