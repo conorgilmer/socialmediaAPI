@@ -50,7 +50,33 @@
           </div>
         </div>
 
-        
 
+
+      </div><!-- /.row -->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 hero-feature">
+<a data-pin-do="buttonFollow" href="https://www.pinterest.com/conorgilmer">Conor&nbsp;Gilmer</a>
+<!-- Please call pinit.js only once per page -->
+<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+       </div> 
+
+<!-- Place this anchor tag where you want the button to go -->
+<a href="https://foursquare.com/user/41414734" class="fourSq-widget" data-type="follow" data-fuid="41414734" data-user-name="Conor Gilmer">Follow us on Foursquare</a>
+
+        <div class="col-lg-4 col-md-6 hero-feature">
+<!-- Place this script somewhere after the anchor tag above. If you have multiple buttons, only include the script once. -->
+<script type='text/javascript'>
+  (function() {
+    window.___fourSq = {};
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.src = 'http://platform.foursquare.com/js/widgets.js';
+    s.async = true;
+    var ph = document.getElementsByTagName('script')[0];
+    ph.parentNode.insertBefore(s, ph);
+  })();
+</script>
+       </div> 
       </div><!-- /.row -->
      <?php include('footer.php'); ?>
