@@ -15,7 +15,8 @@ social media api
 
 ## To Do
 sort out logins
-- twitter
+- native (done)
+- twitter (done)
 - google
 - facebook
 - github
