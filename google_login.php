@@ -1,6 +1,11 @@
 <?php
+/* Author: Conor Gilmer
+ * connect to google using google client
+ *
+ */
 session_start();
 define("APPLICATION_PATH", ".");
+// import in the client id and secret
 require ( APPLICATION_PATH . "/includes/app_tokens_google.inc.php");
 //from quickstart
 require('google-api-php-client/src/Google_Client.php');
@@ -13,7 +18,6 @@ $client->setClientSecret($CLIENT_SECRET);
 $client->setRedirectUri($REDIRECT_URL);
 $client->setDeveloperKey($DEVELOPER_KEY);
 $plus = new Google_PlusService($client);
-
 
 $_SESSION['route'] = "Google Account";
 if (isset($_GET['code'])) {
