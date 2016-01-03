@@ -1,10 +1,12 @@
 
       <hr>
 
+<?php $date_made = date("Y"); ?>
+
       <footer>
         <div class="row">
           <div class="col-lg-12">
-            <p>Copyright &copy; Company 2013 &middot; by <a target="_blank" href="mailto:conor.gilmer@gmail.com">Conor Gilmer</a></p>
+                    <p>&copy; <a target="_blank" href="mailto:conor.gilmer@gmail.com">Conor Gilmer</a> 2010-<?php echo$date_made; ?></p>
           </div>
         </div>
       </footer>
