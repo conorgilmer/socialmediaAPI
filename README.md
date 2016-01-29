@@ -25,3 +25,6 @@ sort out logins
 - openid
 - db/file
 add CV/LinkedIN like
+add fb stream from page
+add foursquare checkins
+
