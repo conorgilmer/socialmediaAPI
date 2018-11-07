@@ -32,7 +32,7 @@
           <div class="thumbnail">
             <!--img src="http://placehold.it/800x500" alt=""-->
             <div class="caption">
-              <h3>Localhost Copy</h3>
+              <h3>Localhost Copy XAMP</h3>
               <p>Facebook Posts and Likes and stuff!</p>
               <p><a href="http://127.0.0.1/socialmediaAPI/index.php" class="btn btn-primary">Localhost</a></p>
             </div>
@@ -44,8 +44,19 @@
             <!--img src="http://placehold.it/800x500" alt=""-->
             <div class="caption">
               <h3>Online Version</h3>
-              <p>Hosted on www.appwayz.com</p>
-              <p><a href="http://www.appwayz.com/socialmediaAPI/index.php" class="btn btn-primary">On Line Version</a> </p>
+              <p>Hosted on www.conorgilmer.eu</p>
+              <p><a href="http://www.conorgilmer.eu/socialmediaAPI/index.php" class="btn btn-primary">On Line Version v.3</a> </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 hero-feature">
+          <div class="thumbnail">
+            <!--img src="http://placehold.it/800x500" alt=""-->
+            <div class="caption">
+              <h3>Online Version</h3>
+              <p>Hosted on www.conorgilmer.eu/mosceal</p>
+              <p><a href="http://www.conorgilmer.eu/mosceal/index.php" class="btn btn-primary">On Line Version V.2</a> </p>
             </div>
           </div>
         </div>
