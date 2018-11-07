@@ -21,6 +21,14 @@
 <iframe id="ytplayer" type="text/html" width="640" height="360"
 src="https://www.youtube.com/embed/?listType=user_uploads&list=cjgilmer"
 frameborder="0" allowfullscreen>
+</iframe>
+</div>
+             <div class="row text-center">
+<script src="https://apis.google.com/js/platform.js"></script>
+
+<div class="g-ytsubscribe" data-channelid="UCS6IZ_ydBtmigY15y2qdZ8g" data-layout="full" data-count="default"></div>
+
 
       </div><!-- /.row -->
+
      <?php include('footer.php'); ?>
