@@ -1,6 +1,6 @@
 <?php include('header.php');
 
-require('twitteroauth.php');
+//require('twitteroauth.php');
 define("APPLICATION_PATH", ".");
 require ( APPLICATION_PATH . "/includes/app_tokens_twitter.inc.php");
 
@@ -36,16 +36,14 @@ if (!isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] != 1)
            <p> Welcome  <?php if ( isset($_SESSION['route']))
         { echo $_SESSION["youare"]; } ?>  you logged in via <?php 
            if ( isset($_SESSION['route']))
-        { echo $_SESSION["route"]; } ?> </p>
-           
-           
+        { echo $_SESSION["route"]; 
+	  //echo " you are a " . $_SESSION["gender"];
+	} ?> </p>
       
         </div>
       </div><!-- /.row -->
-      
           
       <!--row-->
-      
         
       <div class="row">
         <div class="col-lg-12">

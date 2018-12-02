@@ -22,7 +22,7 @@
             <!--img src="http://placehold.it/800x500" alt=""-->
             <div class="caption">
               <h3>Social Media</h3>
-              <p>Tweets and HashTags of Interest! Facebook Streem, Buttons, Google Badges</p>
+              <p>Tweets and HashTags of Interest! Facebook Streem, Buttons, Google Badges, etc., other social media widgets.</p>
               <!--p><a href="index.php" class="btn btn-primary">Login</a> </p-->
             </div>
           </div>
